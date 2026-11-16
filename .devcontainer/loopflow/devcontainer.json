@@ -1,0 +1,5 @@
+{
+  "name": "LoopFlow validation",
+  "image": "mcr.microsoft.com/devcontainers/php:1-8.2-bookworm",
+  "postCreateCommand": "bash .devcontainer/loopflow/semgrep/install-engine.sh"
+}
