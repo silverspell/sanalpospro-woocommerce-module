@@ -1,0 +1,9 @@
+validation:
+  mode: devcontainer
+  commands:
+    - name: php-lint
+      run: "find . -path ./.devcontainer -prune -o -name '*.php' -print0 | xargs -0 -r -n1 php -l"
+
+security:
+  scan:
+    rules: .devcontainer/loopflow/semgrep/rules
